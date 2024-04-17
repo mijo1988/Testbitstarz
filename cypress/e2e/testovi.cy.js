@@ -2,7 +2,7 @@
 
 describe('BitStarz', () => {
 
-    it.skip('RegFlow', () => {
+    it ('RegFlow', () => {
 
         cy.visit('https://test.bitstarz.com/');
         cy.get('[data-cy="signup_btn_header"]').click();
@@ -19,7 +19,7 @@ describe('BitStarz', () => {
     });
 
 
-    it.skip('HomepageFAQ1', () => {
+    it ('HomepageFAQ1', () => {
 
         cy.visit('https://test.bitstarz.com/');
         cy.contains('How to win').click({force: true});
@@ -28,7 +28,7 @@ describe('BitStarz', () => {
         cy.get('[class="c-jackpotz-mania-faq-item-answer__text"]').eq(0).should('have.text', "Jackpotz Mania is an original feature by BitStarz, meaning you'll only find it here (until someone might copy it). Here you'll have a daily chance to win two progressive jackpots and compete for 1,000 additional prizes every month. Best of all? It's FREE!");
     });
 
-    it.skip('HomepageFAQ2', () => {
+    it ('HomepageFAQ2', () => {
 
         cy.visit('https://test.bitstarz.com/');
         cy.contains('How to win').click({force: true});
@@ -37,7 +37,7 @@ describe('BitStarz', () => {
         cy.get('[class="c-jackpotz-mania-faq-item-answer__text"]').eq(2).should('have.text', "Well, who doesn't like free samples? Shoutout to Costco.  Besides that, we think it's only fair to give you a chance to try before you make a deposit. Some casinos give you one set of regular spins, but you didn't come here to win a couple of dollars, right? That's why we give you a daily chance to hit TWO progressive jackpots and compete for 1,000 monthly prizes, FOR FREE!");
     });
 
-    it.skip('HomepageFAQ3', () => {
+    it ('HomepageFAQ3', () => {
 
         cy.visit('https://test.bitstarz.com/');
         cy.contains('How to win').click({force: true});
